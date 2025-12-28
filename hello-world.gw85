@@ -1,0 +1,18 @@
+#require __LANGUAGE_NAME__ == glitchworks-8085-asm
+#require __LANGUAGE_VERSION__ >= 0.1.0
+
+
+.org $4000
+init:
+    call IOSET
+start:
+    lxi de, message
+    call print_cstr_serial
+    jmp start
+
+
+message:
+    .cstr "Hello World!\n8085 SBC rev 4 mini\n\n"
+
+
+#include "serial.gw85"
