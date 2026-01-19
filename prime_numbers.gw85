@@ -265,5 +265,5 @@ temp_value:
     .4byte 0
 
 
-#include "serial.gw85"
-#include "mathlib32.gw85"
+#include "common/serial.gw85"
+#include "common/mathlib32.gw85"

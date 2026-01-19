@@ -1,9 +1,13 @@
+#require __LANGUAGE_NAME__ == glitchworks-8085-asm
+#require __LANGUAGE_VERSION__ >= 0.1.0
+
 ; memcopy
 ;
 ;   Arguments
 ;       bc - address of destination
 ;       de - address of source
 ;       a - number of bytes to copy
+;
 ;
 memcopy:
     push bc             ; save original bc
