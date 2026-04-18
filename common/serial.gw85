@@ -44,6 +44,13 @@ print_hex_serial:
     daa
     jmp COUT
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; print_newline_serial -- prints a single newline character
+print_newline_serial:
+    lxi de,.newline
+    call print_cstr_serial
+    ret
+.newline:  .cstr "\n"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;8085SIO1 -- Console I/O Drivers for 8085 Built-In Serial
