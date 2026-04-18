@@ -15,4 +15,4 @@ message:
     .cstr "Hello World!\n8085 SBC rev 4 mini\n\n"
 
 
-#include "serial.gw85"
+#include "common/serial.gw85"
